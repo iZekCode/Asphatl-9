@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphatl 9: Rejends</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../assets/logo.png">
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="logo">
+        </div>
+
+        <img class="side-nav" src="../assets/navigation-bar.png" alt="" onclick="openNav()" width="100">
+
+        <div class="links" id="links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../HTML/home.html" class="link link-1">home</a>
+            <a href="../HTML/products.html" class="link">products</a>
+            <a href="../HTML/news.html" class="link">news</a>
+            <a href="../HTML/esportevent.html" class="link">esport event</a>
+            <a href="../HTML/subscription.html" class="active link">subscription</a>
+        </div>
+    </div>
+
+    <div class="partition"></div>
+    <div class="subscription-content" id="limit">
+        <div class="subscription-title-container">
+            <p>Unlock Your Racing Journey as <span>Content Creator</span> and <span>Viewer</span></p>
+        </div>
+        <div class="subscription-form-container">
+            <p class="subscription-form-title">Subscription Form</p>
+            <form id="subscription-form" action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <br>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Enter your email">
+                    <br>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <br>
+                    <input type="date" id="dob" name="dob">
+                    <br>
+                    <span class="error" id="dob-error"></span>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" class="gender male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" class="gender">Female</label>
+                    <br>
+                    <span class="error" id="gender-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms" class="terms">I agree to terms and conditions.</label>
+                    <br>
+                    <span class="error" id="terms-error"></span>
+                </div>
+                <div class="submit-group">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="submission-popup" class="popup hidden">
+        <h2>Subscription Submitted</h2>
+        <p>Thank you for your interest! We'll get back to you shortly.</p>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="developer">
+            <img src="../assets/Developers/gamefolt.png" alt="">
+            <img src="../assets/Developers/rjstudio.png" alt="">
+        </div>
+        <div class="footer-links">
+            <a href="../HTML/home.html">Home</a>
+            <a href="../HTML/products.html">Products</a>
+            <a href="../HTML/news.html">News</a>
+            <a href="../HTML/esportevent.html">Esport Event</a>
+            <a href="../HTML/subscription.html">Subscription</a>
+        </div>
+        <p class="social-media-title">Find us on</p>
+        <div class="social-media">
+            <a target="_blank" href="https://www.instagram.com/asphatl9rejends/"><img src="../assets/Social Media/instagram.png" alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/asphatl9rejends/" href=""><img src="../assets/Social Media/facebook.png" alt=""></a>
+            <a target="_blank" href="https://www.youtube.com/asphatl9rejends/" href=""><img src="../assets/Social Media/youtube.png" alt=""></a>
+            <a target="_blank" href="https://www.discord.com/asphatl9rejends/" href=""><img src="../assets/Social Media/discord.png" alt=""></a>
+            <a target="_blank" href="https://www.tiktok.com/asphatl9rejends/" href=""><img src="../assets/Social Media/tik-tok.png" alt=""></a>
+        </div>
+        <p class="copyright">© Copyright 2024 Asphatl 9: Rejends. All Rights Reserved.</p>
+    </div>
+</body>
+<script src="../JS/main.js"></script>
+</html>
